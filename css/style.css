@@ -1,0 +1,712 @@
+:root {
+    --dark-grey-color: #333;
+    --green-text-color: #56a79a;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open-sans', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--dark-grey-color);
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.3;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.primary-text {
+    color: var(--green-text-color)
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+/******************************
+        HEADER & NAVBAR
+******************************/
+
+#main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 2px solid var(--green-text-color);
+    z-index: 1;
+}
+
+.phone-menu {
+    display: none;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar .logo {
+    font-size: 2rem;
+}
+
+.navbar .nav {
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav a {
+    color: #888;
+    margin-right: 2rem;
+}
+
+.navbar .nav li.current a, .navbar .nav a:hover {
+    color: var(--green-text-color);
+    margin-right: 2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid var(--green-text-color);
+}
+
+/******************************
+    SECTION A - HOME PAGE
+******************************/
+
+.section-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: url('../images/notebook-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 2px solid var(--green-text-color);
+}
+
+.section-a .container > div {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    border-radius: 90px;
+    padding: 3.5rem 5rem;
+}
+
+.section-a h1 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+
+.section-a p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/******************************
+    SECTION B - HOME PAGE
+******************************/
+
+.section-b {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    color: var(--dark-grey-color);
+    padding: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.section-b .container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-b blockquote {
+    max-width: 800px;
+}
+
+.section-b i {
+    color: var(--green-text-color);
+    padding: 0 0.5rem;
+}
+
+.section-b .fa-lightbulb {
+    color: var(--green-text-color);
+    font-size: 8rem;
+    padding-bottom: 1rem;
+}
+
+.section-b p {
+    padding: 1rem;
+}
+
+/******************************
+    SECTION C - HOME PAGE
+******************************/
+
+.section-c {
+    height: 100%;
+    background: url('../images/dark-info-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.section-c .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-c img {
+    width: 60%;
+    align-self: center;
+    margin: auto;
+}
+
+.section-c h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.section-c ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section-c li {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+/******************************
+        SECTION D - O MENI
+******************************/
+
+.section-d {
+    height: 100vh;
+    background: url('../images/forest.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.section-d .overlay {
+    background-color: var(--overlay-color);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-d .overlay > div {
+    color: #fff;
+    max-width: 860px;
+    margin: auto;
+}
+
+.section-d .overlay h3 {
+    font-size: 2rem;
+}
+
+.section-d .overlay h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.section-d .overlay p {
+    font-size: 1.2rem;
+    padding: 0 3rem;
+}
+
+/******************************
+        SECTION E - O MENI
+******************************/
+.section-e {
+    background-color: #fff;
+}
+
+.section-e .container .heading {
+    display: flex;
+    width: 67.5%;
+    font-size: 1.5rem;
+    background-color: var(--dark-grey-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+}
+
+.section-e .content {
+    display: flex;
+}
+
+.section-e .text {
+    flex: 2;
+    background-color: var(--green-text-color);
+    color: #fff;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    border-radius: 2px;
+}
+
+.section-e .text p {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+}
+
+.section-e .profile-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.section-e .content img {
+    max-width: 250px;
+    border: 8px solid var(--green-text-color);
+    border-radius: 2px;
+}
+
+/******************************
+        SECTION F - USLUGE
+******************************/
+
+.section-f {
+    height: 100%;
+    background: url('../images/dark-info-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-f h2 {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.section-f h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-f .service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    color: #fff;
+    margin: 6rem 0;
+    align-items: center;
+}
+
+.section-f .service img {
+    width: 80%;
+    border: 8px solid var(--green-text-color);
+    border-radius: 2px;
+}
+
+.section-f .service ul {
+    padding-left: 1rem;
+}
+
+.section-f .service p {
+    font-size: 1.1rem;
+}
+
+
+
+/******************************
+            CONTACT
+******************************/
+
+.contact {
+    height: 100%;
+    background-color: var(--dark-grey-color);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.contact h3 {
+    margin: 1rem 0;
+}
+
+.contact i {
+    color: var(--green-text-color);
+    padding-right: 8px;
+}
+
+.contact a {
+    line-height: 1.9;
+}
+
+.contact a:hover {
+    line-height: 1.9;
+    color: var(--green-text-color);
+    border-bottom: 1px solid var(--green-text-color);
+}
+
+/******************************
+        FOOTER & COPYRIGHT
+******************************/
+
+#main-footer {
+    background-color: var(--green-text-color);
+    color: #fff;
+}
+
+#main-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-footer p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+
+@media(max-width: 860px) {
+    .navbar .container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar .nav {
+        display: none;
+    }
+
+    .navbar h1 {
+        justify-self: flex-start;
+    }
+
+
+    /* HAMBURGER MENU */
+
+    .phone-menu {
+        display: flex;
+        z-index: 1;
+    }
+
+    .phone-menu .toggler {
+        position: absolute;
+        height: 100%;
+        width: 70px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .phone-menu .hamburger {
+        position: absolute;
+        height: 100%;
+        width: 70px;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        background: var(--green-text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-menu .hamburger > i {
+        position: relative;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        transition: all 0.5s ease;
+    }
+
+    .phone-menu .menu {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        display: none;
+        text-align: center;
+    }
+
+    .menu > ul > li {
+        width: 100%;
+        background-color: var(--dark-grey-color);
+        color: #fff;
+        padding: 1rem;
+        border-top: 1px solid #fff;
+    }
+
+    .menu a:hover {
+        color: #888;
+    }
+
+    .phone-menu .toggler:checked + .hamburger {
+        background: #888;
+    }
+
+
+
+
+
+    .section-a .container > div {
+        height: 100px;
+    }
+
+    .section-a p {
+        display: none;
+    }
+
+    .section-b .fa-lightbulb {
+        font-size: 6rem;
+    }
+
+    .section-b blockquote {
+        max-width: 550px;
+    }
+
+    .section-c .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .section-c img {
+        width: 40%;
+    }
+
+    .section-d .workshops {
+        display: none;
+    }
+
+    .section-e .container .heading {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-e .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-e .text {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .section-e .profile-photo {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-f h2 {
+        font-size: 2rem;
+    }
+
+    .section-f .service {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        color: #fff;
+        margin: 3rem 0;
+        padding-bottom: 3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 3px dashed var(--green-text-color);
+    }
+
+    .section-f .service:nth-child(3) > img {
+        order: 1;
+    }
+
+    .section-f .service:nth-child(3) > div {
+        order: 2;
+    }
+
+    .section-f .service:last-child {
+        border-bottom: none;
+    }
+
+    .section-f .service > div {
+        padding: 0 3rem;
+        margin-top: 1rem;
+    }
+
+    .section-f .service img {
+        width: 60%;
+        align-self: center;
+        margin: auto;
+    }
+
+    .section-f .service ul {
+        padding-left: 0;
+    }
+
+    .contact .container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact .container > div {
+        margin-bottom: 1rem;
+    }
+
+    .contact .container > div:nth-child(3) {
+        padding: 0 8rem;
+    }
+}
+
+@media(max-width: 640px) {
+    .contact .container > div:nth-child(3) {
+        padding: 0 2rem;
+    }
+}
+
+@media(max-width: 540px) {
+    .section-a {
+        height: 70vh;
+    }
+
+    .section-a .container > div {
+        height: 80px;
+    }
+
+    .section-a h1 {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .section-b {
+        font-size: 1rem;
+    }
+
+    .section-c h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .section-c ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .section-c li {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+
+    .section-d {
+        height: 70vh;
+    }
+
+    .section-d .overlay h3 {
+        font-size: 1.5rem;
+    }
+    
+    .section-d .overlay h2 {
+        font-size: 1.5rem;
+        margin: 2rem 1rem;
+    }
+    
+    .section-d .overlay p {
+        font-size: 1rem;
+        padding: 0 3rem;
+    }
+
+    .section-e h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-e .text {
+        text-align: center;
+    }
+
+    .section-e .text p {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .section-f .service p {
+        font-size: 1rem;
+    }
+
+    .contact .container > div:nth-child(3) {
+        padding: 0;
+    }
+
+    #main-footer p {
+        font-size: 0.8rem;
+    }
+}
