@@ -726,3 +726,48 @@ img {
         font-size: 0.8rem;
     }
 }
+
+@media(max-height: 500px) {
+    .section-a h1 {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .section-b {
+        font-size: 1.2rem;
+    }
+
+    .section-c h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .section-c ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .section-c li {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+
+    .section-d .overlay > div {
+        padding-top: 3rem;
+    }
+
+    .section-d .overlay h3 {
+        font-size: 1.5rem;
+    }
+    
+    .section-d .overlay h2 {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .section-d .overlay p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
