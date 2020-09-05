@@ -520,6 +520,7 @@ img {
 
     .section-a .container > div {
         height: 100px;
+        padding: 3rem 8rem;
     }
 
     .section-a h1 {
@@ -641,6 +642,15 @@ img {
 }
 
 @media(max-width: 640px) {
+    .section-a .container > div {
+        height: 80px;
+        padding: 3rem 5rem;
+    }
+
+    .section-a h1 {
+        font-size: 1.5rem;
+    }
+
     .contact .container > div:nth-child(3) {
         padding: 0 2rem;
     }
@@ -649,10 +659,6 @@ img {
 @media(max-width: 560px) {
     .section-a {
         height: 70vh;
-    }
-
-    .section-a .container > div {
-        height: 80px;
     }
 
     .section-a h1 {
