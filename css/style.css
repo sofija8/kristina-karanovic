@@ -444,8 +444,9 @@ img {
         display: none;
     }
 
-    .navbar h1 {
+    .navbar .logo {
         justify-self: flex-start;
+        font-size: 1.2rem;
     }
 
 
@@ -728,6 +729,10 @@ img {
 }
 
 @media(max-height: 500px) {
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
     .section-a h1 {
         font-size: 1.5rem;
         padding: 0;
