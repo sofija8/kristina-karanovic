@@ -355,7 +355,7 @@ img {
 
 .section-f .service img {
     width: 80%;
-    border: 8px solid var(--green-text-color);
+    border: 5px solid var(--green-text-color);
     border-radius: 2px;
 }
 
