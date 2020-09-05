@@ -763,11 +763,11 @@ img {
     
     .section-d .overlay h2 {
         font-size: 1.5rem;
-        margin: 2rem;
+        margin: 1rem;
     }
     
     .section-d .overlay p {
         font-size: 1rem;
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
 }
