@@ -431,6 +431,10 @@ img {
     margin: 1rem 0;
 }
 
+#main-footer a:hover {
+    color: #ccc;
+}
+
 
 @media(max-width: 860px) {
     .navbar .container {
