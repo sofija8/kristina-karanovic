@@ -289,7 +289,7 @@ img {
     background-color: var(--dark-grey-color);
     color: #fff;
     padding: 1rem 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     border-radius: 2px;
 }
@@ -662,6 +662,10 @@ img {
 }
 
 @media(max-width: 560px) {
+    .container {
+        padding: 0rem 1rem;
+    }
+
     .section-a {
         height: 70vh;
     }
@@ -743,6 +747,7 @@ img {
     .container {
         padding: 0rem 0.5rem;
     }
+
     .navbar .container a {
         justify-self: flex-start;
         margin-left: 3px;
