@@ -587,6 +587,7 @@ img {
 
     .section-f h2 {
         font-size: 2rem;
+        padding-top: 3rem;
     }
 
     .section-f .service {
@@ -615,7 +616,7 @@ img {
     }
 
     .section-f .service > div {
-        padding: 0 3rem;
+        padding: 0rem;
         margin-top: 1rem;
     }
 
