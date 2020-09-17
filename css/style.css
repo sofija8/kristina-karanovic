@@ -739,6 +739,9 @@ img {
 }
 
 @media(max-width: 430px) {
+    .container {
+        padding: 0rem 1rem;
+    }
     .navbar .container a {
         justify-self: flex-start;
         margin-left: 3px;
