@@ -312,6 +312,10 @@ img {
     margin: 1.5rem 0;
 }
 
+.section-e .text a:hover {
+    color: #cadfe7;
+}
+
 .section-e .profile-photo {
     flex: 1;
     text-align: center;
