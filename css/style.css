@@ -210,9 +210,11 @@ img {
 }
 
 .section-c img {
-    width: 60%;
+    width: 80%;
     align-self: center;
     margin: auto;
+    border: 5px solid var(--green-text-color);
+    border-radius: 2px;
 }
 
 .section-c h2 {
@@ -557,7 +559,7 @@ img {
     }
 
     .section-c img {
-        width: 40%;
+        width: 50%;
     }
 
     .section-d .workshops {
