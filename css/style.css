@@ -1,6 +1,7 @@
 :root {
     --dark-grey-color: #333;
     --green-text-color: #56a79a;
+    --dark-green-color: #023020;
     --overlay-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -261,6 +262,35 @@ img {
     color: #fff;
     max-width: 860px;
     margin: auto;
+}
+
+.section-d .english {
+    display: none;
+}
+
+.section-d button {
+    background-color: var(--green-text-color);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 90px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+}
+
+.section-d button:hover {
+    background-color: var(--dark-green-color);
+    color: #fff;
+    transition: background-color 0.5s;
+    border: none;
+    text-decoration: none;
+    border-radius: 90px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin: 3rem;
 }
 
 .section-d .overlay h3 {
@@ -722,6 +752,18 @@ img {
     .section-d .overlay p {
         font-size: 1rem;
         padding: 0 1rem;
+    }
+
+    .section-d button {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+    }
+    
+    .section-d button:hover {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        margin: 1rem;
     }
 
     .section-e h2 {
