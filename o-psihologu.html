@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr-Latn">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -13,304 +13,129 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
         content="Ja sam Kristina Karanović. Vrlo uspešno pomažem pojedincima da ostvare svoj potencijal kroz psihološko savetovanje i koučing. Seanse održavam online i uživo.">
-    <script src="https://kit.fontawesome.com/73bf979d64.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <script src="js/main.js" defer></script>
     <title>Master psiholog Kristina Karanović | Biografija</title>
 </head>
 
 <body>
     <!-- Header & Navigation -->
-    <header id="main-header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html">
-                    <h1 class="logo">
-                        <span class="primary-text">
-                            <i class="fas fa-tree"></i> Psihološko savetovanje</span>
-                    </h1>
-                </a>
-                <ul class="nav">
-                    <li><a href="index.html">Savetovanje</a></li>
-                    <li class="current"><a href="o-psihologu.html">O psihologu</a></li>
-                    <li><a href="usluge.html">Usluge</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="phone-menu">
-            <input type="checkbox" class="toggler" onclick="openNavbar()">
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Savetovanje</a></li>
-                    <li><a href="o-psihologu.html">O psihologu</a></li>
-                    <li><a href="usluge.html">Usluge</a></li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <span class="brand-icon"><svg class="icon icon-md" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l5 7h-3l4 6h-4l3 5H7l3-5H6l4-6H7z"/><path d="M12 20v2"/></svg></span>
+                <span class="brand-text">
+                    <span class="brand-name">Kristina Karanović</span>
+                    <span class="brand-sub">Psihološko savetovanje</span>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="glavni-meni"><svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+            <nav class="nav" id="glavni-meni" aria-label="Glavni meni">
+                <a href="index.html">Savetovanje</a>
+                <a href="o-psihologu.html" class="current" aria-current="page">O psihologu</a>
+                <a href="usluge.html">Usluge</a>
+                <a href="vesti.html">Vesti</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Showcase -->
-    <section class="section-d">
-        <div class="overlay">
-            <div class="serbian">
-                <h3>Zdravo!</h3>
-                <h2>
-                    Ja sam Kristina Karanović,
-                    <br>
-                    master psiholog, REBT i KBT psihoterapeut.
-                </h2>
-                <p>
-                    Pomažem onima koji se bore sa anksioznošću, panikom i opsesivnim mislima da reše svoj problem kroz REBT i KBT 
-                    psihoterapiju (nekima čak i za 3 seanse). 
-                </p>
-                <p class="workshops">
-                    Pomažem onima koji žele da prevaziđu strahove i da postanu hrabri kroz kratku i efikasnu psihoterapiju.
-                    Možemo da se bavimo svakim pitanjem koje vas muči. 
-                </p>
-
-                <!-- <button>Click here for English</button> -->
-            </div>
-
-            <!-- English -->
-            <div class="english">
-                <h3>Hi!</h3>
-                <h2>
-                    I am Kristina Karanović,
-                    <br>
-                    a psychologist (with a bachelor’s and master’s degree in psychotherapy) and REBT&CBT counsellor.
-                </h2>
-                <p>
-                    The problems that I focus on when working with clients are self-confidence, anxiety, panic attacks, 
-                    fears, sensitivity, anger, procrastination, diversity, professional orientation as well as many others. 
-                </p>
-                <p class="workshops">
-                    We always begin with what bothers the client most at that moment. 
-                    Clients have the right to data privacy and consequently everything we deal with remains strictly 
-                    between us.
-                </p>
-
-                <!-- <button>Click here for Serbian</button> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- About me -->
-    <section class="section-e">
-        <div class="container">
-            <div class="heading">
-                <h2>O MENI</h2>
-            </div>
-            <div class="content">
-                <div class="text">
-                    <p>
-                        Master psiholog (smer: Psihoterapija), diplomirani psiholog, REBT i KBT psihoterapeut, praktičar Atos metoda. 
-                        Praktičar PE - psihoterapije produženog izlaganja za tretman PTSP.
-                        Član Društva Psihologa Srbije, kao i EFPA (evropsko udruženje psihologa). Član Udruženja Umeće življenja. 
-                        Osnivač centra za edukaciju Zen Plus.
-                    </p>
-                    <p>
-                        Odličan student sa prosečnom ocenom preko 9 na studijama psihologije, i prosečnom ocenom
-                        9,92 na specijalističkim studijama. Masterirala na smeru psihoterapija (integrativna psihoterapija)
-                        sa ocenom 10, sa temom Korelati subjektivne samoprocene zadovoljstva životom. Gimnaziju je
-                        završila u Sremskoj Mitrovici.
-                    </p>
-                    <p>
-                        Iskustvo je stekla radeći sa humanitarnim organizacijama, marginalnim grupama, romskom
-                        decom i sa osobama sa posebnim potrebama, kao volonterka Novosadskog humanitarnog centra i
-                        Centra za pomoć mentalno nedovoljno razvijenim osobama grada Novog Sada. 
-                        Završila je kurs TA 101 (Transakciona Analiza), Terapija posvećenosti i prihvatanja (ACT) 101, 
-                        sertifikovani je praktičar Atos metoda Milenka Vlajkova, REBT i KBT psihoterapeut. 
-                        Uspešno sprovodi Analizu individualnih potencijala, prema metodologiji Instituta za kognitivni
-                        menadžment iz Štutgarta. 
-                        Završila je edukaciju Hipnoza i hipnoterapija Instituta za kognitivni 
-                        menadžment u Štutgartu. 
-                        Uspešno završila obuku iz PE - Terapije Produženog Izlaganja za tretman PTSP, 
-                        u organizaciji Centra za tretman i proučavanje anksioznosti, Univerzitet Pensilvanija i 
-                        Društva Psihologa Srbije. 
-                        Uspešno je završila treninge koje je organizovalo Društvo psihologa Srbije 
-                        u saradnji sa prof. dr. Jelisavetom Sanjom Rolović, na temu: Rad sa decom i porodicama u kojima je 
-                        otkriveno seksualno zlostavljanje dece.
-                        Završila je level 1 EMDR kod mentorke dr Vesne Bogdanović.
-                        
-                        Član Društva Psihologa Srbije, kao i EFPA (evropsko udruženje psihologa), 
-                        i IAREBT-a (Internacionalne asocijacije za racionalno-emotivnu bihejvioralnu terapiju). 
-                        Profesionalni član ACBS-a – Asocijacije za kontekstualnu bihejvioralnu nauku (Association for Contextual Behavioral Science).
-                        Član Društva psihoterapeuta Srbije i nosilac nacionalnog sertifikata za psihoterapiju.
-                    </p>
-                    <p>
-                        Učestovala je u brojnim edukacijama i projektima u školama, kao na primer u projektu ‘Moćne
-                        priče u borbi protiv diskriminacije’. Završila je studije romologije na Filozofskom fakultetu u
-                        Novom Sadu, kao i Ženske studije, u organizaciji istog sektora i ambasade Švedske. Na stručnoj
-                        praksi kao psiholog u toku studija je bila u Kliničkom centru Vojvodine u Novom Sadu i na
-                        VMA u Beogradu.
-                    </p>
-                    <p>
-                        <strong>Savetovanje je dostupno u Novom Sadu, i u Sremskoj Mitrovici, kao i online, uz obavezno
-                            zakazivanje na telefon 0643704674.</strong>
-                    </p>
-                    <p>
-                        Do sada više puta intervjuisana za mnoge medije: Politika, RTS, 24sedam, eko list, Bizlife,
-                        Wines of Serbia, Pronto soccorso psicologico iz Rima, itd.
-                    </p>
-                    <p>
-                        Neke od tekstova i intervjua možete pogledati klikom na sledeće linkove:
-                        <br>
-                        - <a href="https://24sedam.rs/slobodno-vreme/zivot-je-lep/9082/izbor-zanimanja-racunovoda-ili-krotitelj-lavova/vest" target="_blank">
-                            <u>Izbor zanimanja - računovođa ili krotitelj lavova</u></a>
-                        <br>
-                        - <a href="https://www.pronto-soccorso-psicologico-roma.it/wine-and-psychology.htm" target="_blank">
-                            <u>Wine And Psychology - Tasting Wine</u></a>
-                        <br>
-                        - <a href="https://www.psychological-first-aid.eu/psychotherapy-and-wine.htm" target="_blank">
-                            <u>Psychotherapy and Wine - The Terror of a Whole Bottle of Wine</u></a>
-                        <br>
-                        - <a href="https://www.psychological-first-aid.eu/intervju-sa-psihologom.htm" target="_blank">
-                            <u>Intervju sa psihologom</u></a>
-                        <br>
-                        - <a href="https://www.euronews.rs/srbija/drustvo/65437/opsesija-plisanim-cudovistima-iz-horor-igre-brine-roditelje-sta-strucnjaci-kazu-o-igracki-hagi-vagi/vest?fbclid=IwAR0XOU9WDrzCjo0BOKoQgz6tkOobWMK5_5zTwhIDyrfy07geXV3czGRBCKY" target="_blank">
-                            <u>Opsesija plišanim čudovištima iz horor igre brine roditelje - Šta stručnjaci kažu o igrački Hagi Vagi</u></a>
-                        <br>
-                        - <a href="https://fabrikakreativnosti.com/mehanizmi-odbrane/" target="_blank">
-                            <u>Mehanizmi odbrane, podkast Umologija - Fabrika kreativnosti</u></a>
-                        <br>
-                        - <a href="https://24sedam.rs/lifestyle/ljubav-i-strast/357034/kako-se-izboriti-sa-usamljenoscu-kada-ste-singl-za-praznike/vest" target="_blank">
-                            <u>Kako se izboriti sa usamljenošću kada ste singl za praznike</u></a>
-                        <br>
-                        - <a href="https://24sedam.rs/lifestyle/zdrav-zivot/357074/kako-prevazici-praznicnu-depresiju/vest" target="_blank">
-                            <u>Kako prevazići prazničnu depresiju</u></a>
-                        <br>
-                        - <a href="https://forbes.n1info.rs/lifestyle/u-pokretu/od-osvojenih-planina-do-pobeda-na-sportskim-olimpijadama-za-mnoge-aktivan-zivot-pocinje-tek-odlaskom-u-penziju/" target="_blank">
-                            <u>Od osvojenih planina do pobeda na sportskim olimpijadama: Za mnoge aktivan život počinje tek odlaskom u penziju</u></a>
-                        <br>
-                        - <a href="https://www.youtube.com/watch?v=jD-zyTMDFHM" target="_blank">
-                            <u>Penzija od radosti do brige i depresije - RTS Jutarnji program</u></a>
-                        <br>
-                        - <a href="https://dorcolijada.com/penzija-od-radosti-do-brige/" target="_blank">
-                            <u>Penzija od radosti do brige</u></a>
-                        <br>
-                        - <a href="https://dorcolijada.com/znacaj-aktivnog-starenja/" target="_blank">
-                            <u>Značaj aktivnog starenja</u></a>
-                        <br>
-                        - <a href="https://forbes.n1info.rs/lifestyle/zdravlje-i-stil/sve-mi-je-to-od-stresa-u-kakvoj-su-tacno-vezi-mozak-i-creva-i-sta-moze-da-maskira-ozbiljniju-bolest/" target="_blank">
-                            <u>„Sve mi je to od stresa“: U kakvoj su tačno vezi mozak i creva i šta može da maskira ozbiljniju bolest</u></a>
-                        <br>
-                        - <a href="https://www.galenpharm.com/portfolio/2026-08/" target="_blank">
-                            <u>Kako izbeći toksična pitanja (str. 24-25)</u></a>
-                        <br>
-                        - <a href="https://www.doktok.rs/portal/depresija-umor-sta-govori-stitasta-zlezda" target="_blank">
-                            <u>Depresija, umor - šta nam govori štitasta žlezda</u></a>
-                        <br>
-                        - <a href="https://www.doktok.rs/portal/kada-ce-drugo-dete-i-ostala-toksicna-pitanja" target="_blank">
-                            <u>Kada će drugo dete i ostala toksična pitanja</u></a>
-                        <br>
-                        - <a href="https://www.doktok.rs/portal/upis-u-skolu-ko-ima-vecu-tremu" target="_blank">
-                            <u>Upis u školu - ko ima veću tremu</u></a>
-                        <br>
-                        - <a href="https://www.vinoifino.rs/novosti/novost_hedonizam_jaca_organizam_vinski_magazin_vino_i_fino_3830" target="_blank">
-                            <u>Hedonizam jača organizam</u></a>
-                        <br>
-                        - <a href="https://ekolist.org/eEkolist/eEkolist46.pdf?fbclid=IwY2xjawVRcstleHRuA2FlbQIxMABwZG9mBWJyaWQRMWt0dkJpZTdRTGhsMnVoaFNzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfL6LlL_KS9cR8yINj3XKBkdEJYGSkDVIaiQtoDLTO9ITWywM_ulIDpP0sm8M_aem_j4ysxjORsnWClBCjc_Of_g" target="_blank">
-                            <u>Kupi, pokaži, baci: Zašto trošimo resurse koje nemamo da bismo zadivili ljude koje ne poznajemo (str. 32-34)</u></a>
-                        <br>
-                        - <a href="https://www.youtube.com/watch?v=GBZ3tqgVmBo" target="_blank">
-                            <u>Izbori su završeni, ali podele ostaju: Kako započeti dijalog pomirenja</u></a>
-                        <br>
-                        - <a href="https://dorcolijada.com/o-zaboravljanju-pise-master-psiholog-kristina-karanovic/" target="_blank">
-                            <u>O zaboravljanju koje nije obično zaboravljanje</u></a>
-                    </p>
-                    <p>
-                        Zainteresovana za
-                        <a href="https://24sedam.rs/slobodno-vreme/ne-bacaj-teglu-udomi-je/" target="_blank">
-                            <u>ekologiju i pitanja održivih načina života</u></a>. Autor malog vodiča
-                        <a href="https://24sedam.rs/slobodno-vreme/iskoristite-moc-dobrih-mikroorganizama-umesto-pravljenja-deponija-kompostirajte-otpad/"
-                            target="_blank">
-                            <u>o kompostiranju</u></a>, u slobodno vreme organizator i predavač na radionicama koje se tiču zaštite
-                            životne sredine i podizanja ekološke svesti. Živi u Novom Sadu.
-                    </p>
-                </div>
-                <div class="profile-photo">
-                    <img src="images/profile-photo.jpg" alt="Kristina Karanovic photo">
+    <main>
+        <!-- Showcase -->
+        <section class="section">
+            <div class="container">
+                <div class="hero hero-about">
+                    <div class="hero-card">
+                        <p class="hello">Zdravo!</p>
+                        <h1>Ja sam Kristina Karanović, master psiholog, REBT i KBT psihoterapeut.</h1>
+                        <p>Pomažem onima koji se bore sa anksioznošću, panikom i opsesivnim mislima da reše svoj problem kroz REBT i KBT psihoterapiju (nekima čak i za 3 seanse).</p>
+                        <p>Pomažem onima koji žele da prevaziđu strahove i da postanu hrabri kroz kratku i efikasnu psihoterapiju. Možemo da se bavimo svakim pitanjem koje vas muči.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- O meni -->
+        <section class="section-lg">
+            <div class="container about">
+                <aside>
+                    <img src="images/profile-photo.jpg" alt="Kristina Karanović">
+                    <p class="note-dark">Savetovanje je dostupno u Novom Sadu, i u Sremskoj Mitrovici, kao i online, uz obavezno zakazivanje na telefon <a href="tel:+381643704674">0643704674</a>.</p>
+                </aside>
+                <article>
+                    <h2>O meni</h2>
+                    <div class="chips">
+                        <span class="chip">Master psiholog</span>
+                        <span class="chip">REBT i KBT psihoterapeut</span>
+                        <span class="chip">Praktičar Atos metoda</span>
+                        <span class="chip">PE za PTSP</span>
+                        <span class="chip">EMDR level 1</span>
+                    </div>
+                    <div class="text">
+                        <p>Master psiholog (smer: Psihoterapija), diplomirani psiholog, REBT i KBT psihoterapeut, praktičar Atos metoda. Praktičar PE - psihoterapije produženog izlaganja za tretman PTSP. Član Društva Psihologa Srbije, kao i EFPA (evropsko udruženje psihologa). Član Udruženja Umeće življenja. Osnivač centra za edukaciju Zen Plus.</p>
+                        <p>Odličan student sa prosečnom ocenom preko 9 na studijama psihologije, i prosečnom ocenom 9,92 na specijalističkim studijama. Masterirala na smeru psihoterapija (integrativna psihoterapija) sa ocenom 10, sa temom Korelati subjektivne samoprocene zadovoljstva životom. Gimnaziju je završila u Sremskoj Mitrovici.</p>
+                        <p>Iskustvo je stekla radeći sa humanitarnim organizacijama, marginalnim grupama, romskom decom i sa osobama sa posebnim potrebama, kao volonterka Novosadskog humanitarnog centra i Centra za pomoć mentalno nedovoljno razvijenim osobama grada Novog Sada.</p>
+                        <p>Završila je kurs TA 101 (Transakciona Analiza), Terapija posvećenosti i prihvatanja (ACT) 101, sertifikovani je praktičar Atos metoda Milenka Vlajkova, REBT i KBT psihoterapeut. Uspešno sprovodi Analizu individualnih potencijala, prema metodologiji Instituta za kognitivni menadžment iz Štutgarta. Završila je edukaciju Hipnoza i hipnoterapija Instituta za kognitivni menadžment u Štutgartu. Uspešno završila obuku iz PE - Terapije Produženog Izlaganja za tretman PTSP, u organizaciji Centra za tretman i proučavanje anksioznosti, Univerzitet Pensilvanija i Društva Psihologa Srbije. Uspešno je završila treninge koje je organizovalo Društvo psihologa Srbije u saradnji sa prof. dr. Jelisavetom Sanjom Rolović, na temu: Rad sa decom i porodicama u kojima je otkriveno seksualno zlostavljanje dece. Završila je level 1 EMDR kod mentorke dr Vesne Bogdanović.</p>
+                        <p>Član Društva Psihologa Srbije, kao i EFPA (evropsko udruženje psihologa), i IAREBT-a (Internacionalne asocijacije za racionalno-emotivnu bihejvioralnu terapiju). Profesionalni član ACBS-a – Asocijacije za kontekstualnu bihejvioralnu nauku (Association for Contextual Behavioral Science). Član Društva psihoterapeuta Srbije i nosilac nacionalnog sertifikata za psihoterapiju.</p>
+                        <p>Učestovala je u brojnim edukacijama i projektima u školama, kao na primer u projektu ‘Moćne priče u borbi protiv diskriminacije’. Završila je studije romologije na Filozofskom fakultetu u Novom Sadu, kao i Ženske studije, u organizaciji istog sektora i ambasade Švedske. Na stručnoj praksi kao psiholog u toku studija je bila u Kliničkom centru Vojvodine u Novom Sadu i na VMA u Beogradu.</p>
+                        <p>Zainteresovana za <a href="https://24sedam.rs/slobodno-vreme/ne-bacaj-teglu-udomi-je/" target="_blank" rel="noopener">ekologiju i pitanja održivih načina života</a>. Autor malog vodiča <a href="https://24sedam.rs/slobodno-vreme/iskoristite-moc-dobrih-mikroorganizama-umesto-pravljenja-deponija-kompostirajte-otpad/" target="_blank" rel="noopener">o kompostiranju</a>, u slobodno vreme organizator i predavač na radionicama koje se tiču zaštite životne sredine i podizanja ekološke svesti. Živi u Novom Sadu.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <!-- Contact -->
-    <section class="contact">
+        <!-- U medijima -->
+        <section class="section">
+            <div class="container">
+                <div class="media-box">
+                    <div>
+                        <h2>U medijima</h2>
+                        <p>Do sada više puta intervjuisana za mnoge medije: Politika, RTS, RTV, 24sedam, Forbes Srbija, Eko list, Bizlife, Wines of Serbia, Dorćolijada, Pronto soccorso psicologico iz Rima, itd.</p>
+                    </div>
+                    <a href="vesti.html" class="btn-dark">Tekstovi i intervjui →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact & Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <div>
-                <h3>MOJ KONTAKT</h3>
-                <ul>
-                    <li><i class="fas fa-phone"></i> <a href="tel:+381643704674">+381 64 370 4674</a></li>
-                    <li><i class="fas fa-envelope"></i> <a
-                            href="mailto:krisstinakaranovic@gmail.com">krisstinakaranovic@gmail.com</a></li>
-                    <li>
-                        <i class="fas fa-map"></i> Novi Sad: Maksima Gorkog 42
-                        <br>
+            <div class="footer-box">
+                <div>
+                    <h3>Moj kontakt</h3>
+                    <p class="lines">
+                        <a href="tel:+381643704674">+381 64 370 4674</a><br>
+                        <a href="mailto:krisstinakaranovic@gmail.com">krisstinakaranovic@gmail.com</a><br>
+                        Novi Sad: Maksima Gorkog 42<br>
                         Sremska Mitrovica: Železnička 19
-                    </li>
-                </ul>
+                    </p>
+                </div>
+                <div>
+                    <h3>Moji linkovi</h3>
+                    <p class="lines">
+                        <a href="https://psiholog-sremska-mitrovica.business.site/" target="_blank" rel="noopener">Psiholog Kristina Karanović</a><br>
+                        <a href="https://www.facebook.com/PsihologSremskaMitrovica/" target="_blank" rel="noopener">Psiholog Sremska Mitrovica</a><br>
+                        <a href="https://www.facebook.com/psiholoskosavetovanjeonline/" target="_blank" rel="noopener">Psiholog Novi Sad</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Zakazivanje</h3>
+                    <p>Da biste zakazali svoj termin pozovite navedeni broj telefona ili pošaljite poruku.</p>
+                    <p class="hours">Radno vreme:<br>ponedeljak - petak 12h-20h</p>
+                </div>
             </div>
-            <div>
-                <h3>MOJI LINKOVI</h3>
-                <ul>
-                    <li><i class="fas fa-file-alt"></i> <a href="https://psiholog-sremska-mitrovica.business.site/"
-                            target="_blank">Psiholog Kristina Karanović</a></li>
-                    <li><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/PsihologSremskaMitrovica/"
-                            target="_blank">Psiholog Sremska Mitrovica</a></li>
-                    <li><i class="fas fa-tree"></i> <a href="https://www.facebook.com/psiholoskosavetovanjeonline/"
-                            target="_blank">Psiholog Novi Sad</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>ZAKAZIVANJE</h3>
-                <p>Da biste zakazali svoj termin pozovite navedeni broj telefona ili pošaljite poruku.
-                    <br>
-                    <span class="primary-text">
-                        Radno vreme:
-                        <br>
-                        ponedeljak - petak 12h-20h
-                    </span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer & Copyright -->
-    <footer id="main-footer">
-        <div class="container">
-            <div>
-                <p>
-                    Kristina Karanović &copy; 2020 | Psihološko savetovanje
-                    <br>
-                    <em>Created by <a href="https://www.linkedin.com/in/sofija-milosavljevic-8834a6aa/"
-                            target="_blank">Sofija Milosavljevic</a></em>
-                </p>
-            </div>
+            <p class="copyright">
+                Kristina Karanović &copy; 2020 | Psihološko savetovanje<br>
+                <em>Created by <a href="https://www.linkedin.com/in/sofija-milosavljevic-8834a6aa/" target="_blank" rel="noopener">Sofija Milosavljevic</a></em>
+            </p>
         </div>
     </footer>
-
-
-
-    <script>
-        function openNavbar() {
-            var menu = document.querySelector(".menu");
-            if (menu.style.display == "none" || menu.style.display == "") {
-                menu.style.display = "block";
-            } else {
-                menu.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
 
